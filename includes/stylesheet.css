@@ -17,6 +17,10 @@ nav, aside, section,article, header,footer, main{
     display: block;
 }
 
+body{
+    font-family:Amiko;
+}
+
 header{
     height: 123px;
     background: #E5E5E5;
@@ -56,11 +60,48 @@ nav > ul > li > a {
     float: left;
 }
 
+.leftSection > section{
+    top: 267px;
+    position: relative;
+    left: 244px;
+}
+
+.leftSection > section > h1{
+    letter-spacing: 5px;
+    font-size:72px;
+}
+
+.leftSection > section > h5{
+    font-size:24px;
+}
+
+
 .rightSection{
     width: 50%;
     height: 860px;
     background:green;
     float: left;
+}
+
+
+.rightSection > section{
+    background:#EBEF18;
+}
+
+.rightSection > .rectangle4{
+    width:75px;
+    height: 23px;
+    float: left;
+    top:135px;
+    position:relative;
+}
+
+.rightSection > .rectangle4{
+    width:75px;
+    height: 23px;
+    float: left;
+    top:135px;
+    position:relative;
 }
 
 .clear {
