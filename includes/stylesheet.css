@@ -12,118 +12,127 @@ nav, aside, section,article, header,footer, main{
     display: block;
 }
 
-#mixLaout{
+#mixLayout{
     font-family:Amiko;
 }
 
-header{
+#mixLayout header, #stairsLayout header {
     height: 123px;
     background: #E5E5E5;
 }
 
-nav  {
+#mixLayout nav, #stairsLayout nav  {
     position: relative;
-    margin: 50% auto;
     top: 52px;
     margin: 0% 33%;
-    width: 100%;
 }
 
 
-nav > ul li{
+#mixLayout nav  ul  li, #stairsLayout nav  ul  li { 
     display: inline-block;
     margin-right:14px;
-    margin-left: 48px;
     position: relative;
+    margin-left: 48px;
 }
  
+
+
 .selected {
     position: relative;
     width: 14px;
     height: 14px;
-    margin-left:20px;
     background-color: #F72828;
     border-radius: 50%;
-    display:inline-block; 
 }
 
-nav ul li:nth-child(3) , li:nth-child(4){ 
+#mixLayout nav ul li:nth-child(2) , #mixLayout nav ul li:nth-child(3) {  
     top:14px;
 }
-.selected a{
+
+
+#stairsLayout nav ul li:nth-child(1){
+    top:14px;
+    margin-right:18px;
+}
+
+#stairsLayout nav ul li:nth-child(3){
+    top:14px;
+    margin-left:65px;
+}
+
+
+#mixLayout .selected a{
     position:relative;
     top:14px;
     right:18px;
 }
 
-
-#stairsLayout .selected {
-    width: 14px;
-    height: 14px; 
-    top: 34px;
-    margin-bottom:75px;
-    background: #F72828;
-    border-radius: 110%;
+#stairsLayout .selected a{
+    position: relative;
+    right:28px;
+    top:14px;
 }
 
-#dynamicLayout .selected {
-    width: 14px;
-    height: 14px; 
-    top: 34px;
-    margin-bottom:75px;
-    background: #F72828;
-    border-radius: 110%;
-} 
-/* '>' direct son */
-nav > ul > li > a {
+
+#dynamicLayout .selected a{
+    position: relative;
+    top:14px;
+    right:30px;
+}
+
+nav > ul  li a {
     color: #000000;
     font-family:Amiko;
     font-size: 24px;
     text-decoration: none;
 }
-
+/*-------------------- page 1 ---------------------------*/
 #mixLayout .leftSection{
     width: 50%;
     height: 860px;
-    background: #E5E5E5;
     float: left;
     clear: both;
 }
 
-.leftSection > section{
+#mixLayout .leftSection > section{
     top: 267px;
     position: relative;
     left:130px;
 
 }
 
-.leftSection > section > h1{
+#mixLayout .leftSection > section > h1{
     letter-spacing: 5px;
     font-size:72px;
 }
 
-.leftSection > section > h5{
+#mixLayout .leftSection > section > h5{
     font-size:24px;
     width: 374px;
     height: 33px;
     clear:both;
 }
 
+#mixLayout .leftSection{
+    width: 50%;
+    height: 860px;
+    float: left;
+    clear: both;
+}
 
 #mixLayout .rightSection {
     width: 50%;
     height: 860px;
-    background: #E5E5E5;
     float: left;
     position:relative; 
 }
 
-.rightColumn{
+#mixLayout .leftColumn{
     float: left;
     position:relative;
 }
 
-.rectangle4{
+#mixLayout .rectangle4{
     margin-top:135px;
     background:#EBEF18;
     width:75px;
@@ -133,7 +142,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle5{    
+#mixLayout .rectangle5{    
     margin-top:8px; 
     background:#EBEF18;
     margin-right:13px;
@@ -143,7 +152,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle6{
+#mixLayout .rectangle6{
     margin-right:15px;
     margin-top:11px; 
     width:134px;
@@ -153,7 +162,7 @@ nav > ul > li > a {
     background:#EBEF18;
 }
 
-.rectangle10{
+#mixLayout .rectangle10{
     margin-top:11px; 
     width:88px;
     height: 28px;
@@ -162,7 +171,7 @@ nav > ul > li > a {
     background:#EBEF18;
 }
 
-.rectangle11{
+#mixLayout .rectangle11{
     margin-top:7px; 
     width:25px;
     height:26px; 
@@ -171,7 +180,7 @@ nav > ul > li > a {
     background:#EBEF18;
 }
 
-.rectangle11a{
+#mixLayout .rectangle11a{
     margin-top:7px; 
     margin-left:7px; 
     width:25px;
@@ -180,12 +189,12 @@ nav > ul > li > a {
     float:left;
 }
 
-.midColumn{
+#mixLayout .midColumn{
     float: left;
     position: relative;
 }
 
-.rectangle2{ 
+#mixLayout .rectangle2{ 
     margin-top:135px;
     width:246px;
     height:352px;
@@ -194,7 +203,7 @@ nav > ul > li > a {
     clear:right;
 }
 
-.rectangle7{
+#mixLayout .rectangle7{
     width:123px;
     height:212px;
     margin-top:16px;
@@ -204,7 +213,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle8{
+#mixLayout .rectangle8{
     width:55px;
     height:105px;
     margin-top:16px;
@@ -213,7 +222,7 @@ nav > ul > li > a {
     float:left;
 }
 
-.rectangle9{
+#mixLayout .rectangle9{
     width:110px;
     height:58px;
     margin-top:-100px;
@@ -222,12 +231,12 @@ nav > ul > li > a {
     clear:left;
 }
 
-.leftColumn{
+#mixLayout .rightColumn{
     float: left;
     position: relative;
 }
 
-.rectangle3{
+#mixLayout .rectangle3{
     margin-top:91px;
     margin-left:14px;
     width:28px;
@@ -237,7 +246,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle3a{
+#mixLayout .rectangle3a{
     margin-top:11px;
     margin-left:14px;
     width:28px;
@@ -247,7 +256,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle3b{
+#mixLayout .rectangle3b{
     margin-top:11px;
     margin-left:14px;
     width:28px;
@@ -257,7 +266,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle3c{
+#mixLayout .rectangle3c{
     margin-top:11px;
     margin-left:14px;
     width:28px;
@@ -267,7 +276,7 @@ nav > ul > li > a {
     clear:left;
 }
 
-.rectangle8a{
+#mixLayout .rectangle8a{
     margin-top:16px;
     margin-left:14px;
     width:55px;
@@ -276,18 +285,117 @@ nav > ul > li > a {
     float:right;
     clear:left;
 }
-/* ---------------------page 2------------------ */
 
-.rectangleEx2{
-    margin-top:16px;
-    margin-left:14px;
+
+/* ---------------------page 2------------------ */
+ #stairsLayout .leftColumn{
+    float:left;
+    clear:right;
+    right:832px;
+    margin-left:151px;
+    position: absolute;
+}
+
+#stairsLayout .leftColumn section{
+    margin-top:70px;
+    width:457px;
+    height:299px;
+    float:left;
+    clear:both;
+    background:#C4C4C4;
+ }
+
+
+#stairsLayout .midColumn{
+    margin-top:287px;
+    float:right;
+    clear:left;
+    position: relative;
+    margin-right:320px;  
+}
+
+#stairsLayout .midColumn section{ 
+    margin-bottom:70px;
     width:457px;
     height:299px;
     background:#C4C4C4;
-    float:right;
-    clear:left;
+    float:left;
+    clear:both;
+    position:relative;    
 }
 
+#stairsLayout .rightColumn {
+    float:right;
+    clear:left;
+    position: absolute;    
+    right:0px;
+}
+
+#stairsLayout .rightColumn section{
+    width: 169px;
+    height:1925px;
+    background: #EBEF18;
+    position: relative;    
+}
+
+
+#stairsLayout .rightColumn section{
+    width: 169px;
+    height:1925px;
+    background: #EBEF18;
+    position: relative;    
+}
+
+#stairsLayout .rightColumn .blackBox1 {
+    position:relative;
+    width: 80px;
+    height: 80px;
+    bottom:1852px;
+    background:linear-gradient(0deg, #000000, #000000), #000000;
+}
+
+#stairsLayout .rightColumn .blackBox2 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(0deg, #000000, #000000), #000000;
+    bottom:1382px;
+    position:relative;
+}
+
+#stairsLayout .rightColumn .whiteBox {
+    width: 80px;
+    height: 80px;
+    right:0px;
+    float:right;
+    bottom: 1758px;
+    position:relative;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #000000; 
+}
+
+#stairsLayout .rightColumn ul {
+    font-family: Amiko;
+    list-style:none;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    position:relative;
+    width: 81px;
+    height: 641px;
+    top:-855px;
+    margin-left: 45px;
+}
+
+#stairsLayout .rightColumn > ul li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 128px;
+    /* display: flex;  */
+    align-items: flex-end;
+    text-align: center;
+    color:#000000;
+    text-decoration: none;
+}
 
 .clear {
     clear: both;
@@ -300,6 +408,111 @@ footer{
     bottom: 0;
 }
 
-#stairsLayout footer {
+footer {
     position: fixed;
+}
+
+/*--------------page 3--------------------*/
+
+#dynamicLayout header  {
+    position: relative;
+    height: 123px;
+    background: #F2E9E9;
+}
+
+    
+#dynamicLayout header #boxTop {
+    width: 80px;
+    height: 80px;
+    margin-right:24px;
+    background: black;
+    float:right;
+    clear:both;
+}
+
+
+#dynamicLayout nav  {
+    /* background:#F2E9E9; */
+    height: 995px;
+    width: 30%;
+    background: #E5E5E5;
+    display: inline-block;
+    margin-right: 64px;
+    float: left;
+}
+
+#dynamicLayout nav ul {
+    margin-left: 38px;
+    position: relative;
+    top: 123px;
+}
+
+#dynamicLayout nav  ul li {   
+    display: inline-block;
+    
+}
+
+#dynamicLayout nav  ul li:nth-child(2) {     
+    margin-left: 17px;
+}
+
+#dynamicLayout nav  ul li:nth-child(2) {     
+    padding-right:58px;
+}
+
+#dynamicLayout nav  ul li:nth-child(3) { 
+    bottom:14px;
+}
+
+#dynamicLayout section.rightNavBlock {
+    width: 10%;
+    height:995px;
+    background:rgba(24, 239, 33, 0.3);
+    position: absolute; 
+    float: right;
+    right:0%;
+}
+
+#squareSurface {
+    width: 55%;
+    display: inline-block;
+    margin-top: 123px;
+    float: left;
+}
+
+#dynamicLayout footer {
+    width: 1440px;
+    height:463px;
+    margin-left:200px;
+    background: #EBEF18;
+    position: relative;
+    float:right; 
+}
+
+#dynamicLayout #createSquareBtn {
+    width: 80px;
+    height: 80px;
+    margin-right:24px;
+    background: black;
+    float:right;
+    clear:both;
+    display: block;
+    outline: none;
+    border: 0;
+    margin-top: 21px;
+}
+
+#dynamicLayout .squareCard {
+    background: #000000;
+    display: inline-block;
+    margin-right: 64px;
+    position: relative;
+}
+
+#dynamicLayout .squareCard .squareText {
+    color: white;
+    font-style: normal;
+    text-align: center;
+    display: inline-block;
+    font-size: 64px;
 }
